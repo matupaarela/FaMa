@@ -1,0 +1,113 @@
+/*
+ @group   table
+ @author  TUPA ARELA, Marco Antonio (matupaarela@hotmail.com)
+*/
+
+$tb_color: $md_blue_grey;
+.table-container {
+    overflow-x: auto;
+    @include from($desktop) {
+        overflow: hidden;
+    }
+}
+
+.table-caption {
+    border-bottom: 1px solid rgba($white, .5);
+    background: $tb_color;
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+    border-radius: .3em .3em 0 0;
+    &__title {
+        color: $white;
+    }
+}
+
+.table {
+    width: 100%;
+    position: relative;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: $white;
+    font-size: 13px;
+    border: 1px solid rgba($tb_color, .5);
+    thead {
+        border-bottom: 2px solid rgba($tb_color, .5);
+        tr {
+            background: $tb_color;
+            &:first-child {
+                border-bottom: 1px solid rgba($white, .5);
+            }
+            th {
+                border-left: 1px solid rgba($white, .5);
+                color: $white;
+                padding: .5em;
+                &:first-child {
+                    border: none;
+                }
+                .control {
+                    @include fixedSize(30px, 100%);
+                }
+            }
+        }
+    }
+    tbody {
+        border-bottom: 2px solid rgba($tb_color, .5);
+        tr {
+            &:hover {
+                background-color: rgba($tb_color, .2);
+            }
+            td {
+                border-bottom: 1px solid rgba($tb_color, .3);
+                padding: .3em .5em;
+                text-align: center;
+                font-size: 12px;
+                &:nth-child(2n) {
+                    background-color: rgba($tb_color, .1);
+                }
+                &.xxs {
+                    min-width: 30px;
+                }
+                &.xs {
+                    min-width: 60px;
+                }
+                &.sm {
+                    min-width: 100px;
+                }
+                &.lg {
+                    min-width: 200px;
+                }
+                &.l {
+                    text-align: left;
+                }
+                &.r {
+                    text-align: right;
+                }
+                &.c {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    tfoot {
+        tr {
+            td {
+                text-align: center;
+                border-bottom: 1px solid rgba($tb_color, .5); //background-color: rgba($tb_color, .5);
+                color: $tb_color;
+                font-weight: bold;
+                font-size: 12px;
+                padding: .3em .5em;
+                &:nth-child(2n) {
+                    background-color: rgba($tb_color, .1);
+                }
+                &.l {
+                    text-align: left;
+                }
+                &.r {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "cetpro";
+  src:url("../ifonts/cetpro.eot");
+  src:url("../ifonts/cetpro.eot?#iefix") format("embedded-opentype"),
+    url("../ifonts/cetpro.woff") format("woff"),
+    url("../ifonts/cetpro.ttf") format("truetype"),
+    url("../ifonts/cetpro.svg#cetpro") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "cetpro" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="i-"]:before,
+[class*=" i-"]:before {
+  font-family: "cetpro" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-search:before {
+  content: "\61";
+}
+.i-music:before {
+  content: "\62";
+}
+.i-list:before {
+  content: "\63";
+}
+.i-home:before {
+  content: "\64";
+}
+.i-setting:before {
+  content: "\66";
+}
+.i-power:before {
+  content: "\67";
+}
+.i-x:before {
+  content: "\68";
+}
+.i-check:before {
+  content: "\69";
+}
+.i-favorite:before {
+  content: "\6a";
+}
+.i-refresh:before {
+  content: "\6b";
+}
+.i-back:before {
+  content: "\6c";
+}
+.i-right:before {
+  content: "\6e";
+}
+.i-left:before {
+  content: "\6f";
+}
+.i-less:before {
+  content: "\70";
+}
+.i-more:before {
+  content: "\71";
+}
+.i-down:before {
+  content: "\72";
+}
+.i-up:before {
+  content: "\73";
+}
+.i-calendary:before {
+  content: "\74";
+}
+.i-hidden:before {
+  content: "\75";
+}
+.i-show:before {
+  content: "\76";
+}
+.i-folder-open:before {
+  content: "\77";
+}
+.i-folder:before {
+  content: "\78";
+}
+.i-key-1:before {
+  content: "\41";
+}
+.i-conversations:before {
+  content: "\42";
+}
+.i-config:before {
+  content: "\43";
+}
+.i-like:before {
+  content: "\44";
+}
+.i-dislike:before {
+  content: "\45";
+}
+.i-login:before {
+  content: "\46";
+}
+.i-logout:before {
+  content: "\47";
+}
+.i-facebook:before {
+  content: "\49";
+}
+.i-twiter:before {
+  content: "\4a";
+}
+.i-favorite-empty:before {
+  content: "\4b";
+}
+.i-users:before {
+  content: "\4c";
+}
+.i-clip:before {
+  content: "\4d";
+}
+.i-mail:before {
+  content: "\4e";
+}
+.i-dashboard:before {
+  content: "\4f";
+}
+.i-organigram:before {
+  content: "\52";
+}
+.i-download:before {
+  content: "\53";
+}
+.i-upload:before {
+  content: "\54";
+}
+.i-pdf:before {
+  content: "\56";
+}
+.i-google:before {
+  content: "\59";
+}
+.i-conversation:before {
+  content: "\30";
+}
+.i-video:before {
+  content: "\31";
+}
+.i-image:before {
+  content: "\32";
+}
+.i-edit:before {
+  content: "\33";
+}
+.i-print:before {
+  content: "\34";
+}
+.i-usd:before {
+  content: "\35";
+}
+.i-calc:before {
+  content: "\36";
+}
+.i-futball:before {
+  content: "\37";
+}
+.i-graphic-3d:before {
+  content: "\38";
+}
+.i-graphic-lineal:before {
+  content: "\39";
+}
+.i-delate:before {
+  content: "\21";
+}
+.i-mail-open:before {
+  content: "\23";
+}
+.i-user-circle:before {
+  content: "\24";
+}
+.i-zip:before {
+  content: "\65";
+}
+.i-send:before {
+  content: "\6d";
+}
+.i-user:before {
+  content: "\79";
+}
+.i-graduation:before {
+  content: "\7a";
+}
+.i-save:before {
+  content: "\48";
+}
+.i-menu:before {
+  content: "\50";
+}
+.i-tag:before {
+  content: "\51";
+}
+.i-tags:before {
+  content: "\55";
+}
+.i-key:before {
+  content: "\57";
+}
+.i-gif:before {
+  content: "\22";
+}
+.i-message:before {
+  content: "\58";
+}

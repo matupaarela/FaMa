@@ -1,0 +1,142 @@
+/*
+ @group   buttons
+ @author  TUPA ARELA, Marco Antonio (matupaarela@hotmail.com)
+*/
+
+%button {
+	display: inline-block;
+	padding: .8em 1.6em;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+/*
+	Establece estilos predefinidos
+*/
+@mixin btn($bg-color: var(--lightgray), $front-color: #333, $style: radius) {
+	@extend    %button;
+	background : $bg-color;
+	color      : $front-color;
+
+	&:hover { background: darken($bg-color, 5); }
+	&:active { transform : scale(.97); }
+	
+	@if $style == radius { border-radius : .25em; }
+	@else if $style == round { border-radius : 1.25em; }
+}
+
+.btn-container {
+	position: relative;
+	min-width: 100px;
+}
+
+.btn {
+	@include btn;
+	&--success,
+	&--primary,
+	&--info,
+	&--warning,
+	&--danger {
+		@extend .btn;
+	}
+	&--success { @include btn($md_teal, $white); }
+	&--primary { @include btn($md_blue, $white); }
+	&--info { @include btn($ios_tealblue, $white); }
+	&--warning { @include btn($ios_orange, $white); }
+	&--danger { @include btn($md_pink, $white); }
+
+	&--sm {
+		@extend .btn;
+		//padding: .2rem .5rem;
+		padding: .15rem .4rem;
+		@include icenter;
+		font-size: .7rem;
+	}
+	
+	&--ism {
+		padding: 0;
+		@extend .btn--sm;
+		@include fixedBox(20px);
+		i {
+			margin: 0;
+		}
+		&:hover {
+			@include icenter;
+			&:after,
+			&:before {
+				position: absolute;
+				background: rgba($black, .85);
+				box-shadow: $shadow2dp;
+				z-index: 500;
+			}
+			&:after {
+				content: '';
+				@include fixedSize(10px, 10px);
+				transform: rotate(45deg);
+				bottom: 102%;
+				z-index: 499;
+			}
+			&:before {
+				bottom: 112%;
+				content: attr(tooltip);
+				font-size: .7rem;
+				//text-transform: uppercase;
+				padding: .5em .7em;
+				border-radius: .2em;
+				font-weight: bold;
+				white-space: nowrap;
+			}
+		}
+	}
+}
+
+.ibtn {
+	outline: none;
+	background: $bg1;
+	border-radius: 50%;
+	border: 2px solid $bd1;
+	cursor: pointer;
+	transition: all .3s ease;
+	i {
+		margin: 0;
+		font-size: 0;
+		transform: scale(.0);
+		&:before {
+			top: 1px;
+		}
+		@include to($tablet) {
+			font-size: .65rem;
+		}
+	}
+	@include fixedBox(20px);
+	&:hover {
+		background: $bg2;
+		border: 1px solid $bd2;
+		color: $x2;
+		i {
+			font-size: .65rem;
+		}
+	}
+}
+
+.btn--floatting {
+	border-radius: 50%;
+	background: $ed_green;
+	width: 40px;
+	height: 40px;
+	@include center;
+	position: fixed;
+	z-index: 200;
+	right: 0;
+	bottom: 0;
+	margin: 1em;
+	box-shadow: $shadow4dp;
+	[class*="i-"]:before {
+		color: #EEE;
+		text-shadow: text3d(2);
+	}
+	&:hover {
+		box-shadow: $shadow12dp;
+	}
+}

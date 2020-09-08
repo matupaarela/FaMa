@@ -1,0 +1,75 @@
+/*
+ M&M Styles
+ @group   Variables
+ @author  TUPA ARELA, Marco Antonio
+ @email   matupaarela@hotmail.com
+*/
+
+$titleSize: 18px;
+$subTitleSize: 14px;
+$textSize: 12px;
+
+/*
+ Breakpoints
+*/
+$mobile: 480px;
+$tablet: 720px;
+$desktop: 1024px;
+$desktop2k: 1080px;
+$desktop4k: 1921px;
+
+$breakpoints: (
+    s: 0,
+    m: 640px,
+    l: 1024px,
+    xl: 1440px
+) !default;
+
+/*
+ sonbras
+*/
+$shadow: 0 2px 2px 0 rgba(#000, 0.14),
+		0 3px 1px -2px rgba(#000, .2),
+		0 1px 5px 0 rgba(#000, 0.12);
+
+$hover_shadow: 0 3px 5px 2px rgba(#000, 0.14),
+	        	0 2px 8px -1px rgba(#000, 0.12),
+    	    	0 3px 5px -3px rgba(#000, 0.4);
+
+$bottom-shadow: 3px 3px 4px 0px rgba(#000, 0.14),
+				3px 1px 3px 0 rgba(#000, .12),
+				3px 1px 6px 0 rgba(#000, .2);
+
+$left-shadow: -2px 3px 5px 0px rgba(#000, 0.14),
+			-1px 2px 6px 0px rgba(#000, .12),
+			-3px 3px 5px 0px rgba(#000, .2);
+
+$shadow2dp: 0 2px 2px 0 rgba($black, .14),
+			0 1px 5px 0 rgba($black, .12),
+			0 3px 1px -2px rgba($black, .2);
+
+$shadow3dp: 0 3px 4px 0 rgba($black, .14),
+			0 1px 8px 0 rgba($black, .12),
+			0 3px 3px -2px rgba($black, .4);
+
+$shadow4dp: 0 4px 5px 0 rgba($black, .14),
+			0 1px 10px 0 rgba($black, .12),
+			0 2px 4px -1px rgba($black, .4);
+
+$shadow6dp: 0 6px 10px 0 rgba($black, .14),
+			0 1px 18px 0 rgba($black, .12),
+			0 3px 5px -1px rgba($black, .4);
+
+$shadow8dp: 0 8px 10px 1px rgba($black, .14),
+			0 3px 14px 2px rgba($black, .12),
+			0 5px 5px -3px rgba($black, .4);
+
+$shadow12dp: 0 12px 16px 1px rgba($black, .14),
+			0 4px 22px 3px rgba($black, .12),
+			0 6px 7px -4px rgba($black, .4);
+
+$shadow16dp: 0 16px 24px 2px rgba($black, .14),
+			0 6px 30px 5px rgba($black, .12),
+			0 8px 10px -5px rgba($black, .4);
+
+$transition: box-shadow 0.28s cubic-bezier(.4, 0, .2, 1);

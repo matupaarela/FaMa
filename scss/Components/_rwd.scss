@@ -1,0 +1,55 @@
+:root {
+	//z-index
+	--z-back: -10;
+	--z-normal: 1;
+	--z-tooltip: 10;
+	--z-fixed: 100;
+	--z-modal: 1000;
+
+	//Breakponts
+	--mobile: 240px;
+	--tablet: 640px;
+	--desktop: 1024px;
+
+	//Headers (Titles)
+	--fz-h1: 20px;
+	--fz-h2: 18px;
+	--fz-h3: 16px;
+	--fz-h4: 14px;
+	--fz-h5: 12px;
+	--fz-h6: 10px;
+
+	--title-banner: 2.25rem;
+
+	//textos
+	--fz-text: 14px;
+
+	//--
+	--mr-main: 1rem;
+
+	/*Ancho de Busqueda*/
+	--w-search: 100%;
+
+	/*Ancho de Menu*/
+	--wmenu: 100%;
+	--menu-wrap: wrap;
+
+	--pos-menu: fixed;
+
+	--toggle-view: block;
+
+	--wcard-destacate: 100%;
+
+	@media screen and (min-width: var(--mobile)) {
+		--wmenu: 300px;
+		--w-search: 300px;
+		--mr-main: 3rem;
+	}
+
+	@media screen and (min-width: var(--tablet)){
+		--pos-menu: relative;
+		--toggle-view: none;
+		--wcard-destacate: 300px;
+		--menu-wrap: nowrap;
+	}
+}

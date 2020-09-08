@@ -1,0 +1,76 @@
+/*
+ @group   modal
+ @author  TUPA ARELA, Marco Antonio (matupaarela@hotmail.com)
+*/
+.modal-container {
+	position: fixed;
+	display: none;
+	top: 0;
+	content: '';
+	@include fixedSize(100vh, 100vw);
+	z-index: 200;
+	padding: 1em;
+	background: radial-gradient(transparent, rgba($ed_dark, .9));
+	/*background: radial-gradient(center,
+								ellipse cover,
+								rgba($black, .7) 0%,
+								rgba($black, .9) 100%);*/
+	.modal {
+		margin: auto;
+		transition: 0.4s ease-out;
+		opacity: 0;
+		background-color: $white;
+		box-shadow: $shadow4dp;
+		@include fixedSize(auto, 600px);
+		border-radius: 5px;
+		@include to($tablet) {
+			@include fixedSize(auto, 100%);
+		}
+		&--visible {
+			@extend .modal;
+			transform: scale(1);
+			opacity: 1;
+		}
+		&.zoomin {
+			transform: scale(1.2);
+		}
+		&.zoomout {
+			transform: scale(0.7);
+		}
+		&__header {
+			@include fixedSize(50px, 100%);
+			border-bottom: 1px solid rgba($black, .1);
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 .5em 0 .5em;
+			color: $md_blue;
+			font-weight: bold;
+			&__btnClose {
+				//@include btn($white, $md_red);
+			}
+		}
+		&__body {
+			//@include boxSizeExactly(auto, 100%);
+			//max-height: 55vh;
+			max-height: calc(100vh - 127px);
+			padding: .5em;
+			overflow: hidden;
+			overflow-y: auto;
+		}
+		&__footer {
+			border-top: 1px solid rgba($black, .1);
+			@include fixedSize(50px, 100%);
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 0 .5em 0 .5em;
+			.btn {
+				&:first-child {
+					margin-right: .5em;
+				}
+			}
+		}
+	}
+}

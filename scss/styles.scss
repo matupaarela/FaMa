@@ -1,0 +1,84 @@
+/*
+ @group       master
+ @author      TUPA ARELA, Marco Antonio (matupaarela@hotmail.com)
+ @description libreria creada para proyectos personales.
+*/
+
+
+/*	Selectores:
+		Universal (*): Selecciona todos los elementos.
+		Hermanos:
+			Siguiente - Singular (A + B): B está justo despues de A, se selecciona B.
+			Siguientes - plural (A ~ B): B está despues de A, no importa si entre ellos hay otros elementos. Se selecciona todos los B.
+		Atributos:
+			Un atributo se selecciona en corchetes [class], [type]....
+			Aceptan comodines:
+				Dolar ($): Termina con.
+					[src$="jpg"]
+				Cared (^): Comienza con.
+					[href^="http"]
+				Ateristico (*): Contiene a.
+					[class*="icon-"]
+	SeudoClases: Se activan en determinadas circunstancias.
+		:hover: Al pasar el cursor.
+		:active: Al hacer clic.
+		:visited: Un enlace que ya se visito.
+		:focus: Un campo de formulario seleccionado.
+		:empty: Selecciona elementos vacios.
+		:not(): Selecciona a los elementos que no coincidan con el selector pasado como parametro.
+		::selection: Al seleccionar un texto.
+*/
+
+@import 'Components/colors';
+@import 'Components/pallete';
+@import 'Components/rwd';
+@import 'Components/base';
+@import 'Components/variables';
+@import 'Components/functions';
+@import 'Components/mixins';
+@import 'Components/scroll_bar';
+@import 'Components/tabs';
+@import 'Components/forms';
+@import 'Components/buttons';
+@import 'Components/tables';
+@import 'Components/modal';
+@import 'Components/pagination';
+@import 'Components/video';
+@import 'Components/menu';
+@import 'Components/alert';
+@import 'Components/tags';
+@import 'Components/tooltip';
+@import 'Components/icons';
+
+@import 'Components/header';
+@import 'Components/banner';
+@import 'Components/cards';
+@import 'Components/ifonts';
+@import 'Components/footer';
+@import 'Components/contact';
+@import 'Components/profile';
+@import 'Components/dialogs';
+@import 'Components/search';
+@import 'Components/detail-specialty';
+
+
+body {
+	background: #F2F2F2;
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: 50px auto;
+}
+
+.header {
+	grid-column: 1 / 2;
+	grid-row: 1 / 1;
+}
+
+.aside {
+	grid-column: 1 / 1;
+	grid-row: 2 / 3;
+}
+.main {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}

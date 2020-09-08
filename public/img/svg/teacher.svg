@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 23.291">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff3c32;
+      }
+    </style>
+  </defs>
+  <g id="teacher" transform="translate(0 -0.463)">
+    <g id="Group_356" data-name="Group 356" transform="translate(0 0.463)">
+      <rect id="Rectangle_203" data-name="Rectangle 203" class="cls-1" width="3.872" height="1.439" transform="translate(18.162 11.334)"/>
+      <path id="Path_103" data-name="Path 103" class="cls-1" d="M2.931.463V2.726l.988-.305v-.97H23.695V14.059H7.958l-.051.988H24.684V.463Z" transform="translate(-0.684 -0.463)"/>
+      <circle id="Ellipse_4" data-name="Ellipse 4" class="cls-1" cx="2.929" cy="2.929" r="2.929" transform="translate(0.891 2.485)"/>
+      <path id="Path_104" data-name="Path 104" class="cls-1" d="M6.306,23.495V17.122h.186l.272-5.293,5.051-2.618-.425-.819.123.215,5.412-3.1-.245-.429-5.4,3.094-.126-.243L6.533,10.324H4.886L3.769,11.619,2.688,10.324l-2.373.441L.163,16.029H1.17l.054,1.093h.153v6.373h-.2L0,23.75v1.082H1l1.168-.19.011.19H3.473V18.281H4.21v6.552H5.5l.011-.19,1.168.19h1V23.75l-1.176-.255Z" transform="translate(0 -1.541)"/>
+    </g>
+  </g>
+</svg>

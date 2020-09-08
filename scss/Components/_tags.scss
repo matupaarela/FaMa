@@ -1,0 +1,28 @@
+.tag {
+	padding: 1px .3em;
+	border-radius: .2em;
+	color: $white;
+	//font-size: 12px;
+    &--success,
+    &--primary,
+    &--info,
+    &--warning,
+    &--danger {
+        @extend .tag;
+    }
+    &--success {
+        background-color: $md_green;
+    }
+    &--primary {
+        background-color: $md_blue;
+    }
+    &--info {
+        background-color: $md_light_blue;
+    }
+    &--warning {
+        background-color: $md_amber;
+    }
+    &--danger {
+        background-color: $md_red;
+    }
+}

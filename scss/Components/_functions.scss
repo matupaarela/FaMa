@@ -1,0 +1,57 @@
+/*
+ @group   functions
+ @author  TUPA ARELA, Marco Antonio (matupaarela@hotmail.com)
+*/
+
+/*
+ Obtiene el color
+*/
+@function getColor($color) {
+	@if (lightness($main) > 50) {
+		@return rgba(black, .8);
+	} @else {
+		@return rgba(white, .8);
+	}
+}
+
+/*
+ Genera sonbras en un texto, convirtiendolo en 3D
+ @param   {number} $number: el valor en pixeles.
+ @param   {string} $color: el valor en rgb(), rgba(), exadecimales, etc.
+ @return  {string} iteración de sombras.
+*/
+@function text3d($number, $color: $black) {
+	$text-shadow: 1px 1px #{$color};
+	@for $i from 1 through $number {
+		$text-shadow: '#{$text-shadow},
+		#{$i}px #{$i}px #{$color}';
+	}
+	@return unquote($text-shadow);
+}
+
+/*
+ Transforma un valor en pixeles a em.
+ @param   {number} $el: el valor en pixeles que se desea convertir.
+ @param   {number} $context: el valor en pixeles del contenedor.
+ @return  {number} el tamaño transformado en em.
+*/
+@function em($el,$context:16px) {
+	@if type_of($el) == number and unit($el) == 'px' {
+		@return ($el / $context) * 1em;
+	} @else {
+		@error 'La función em() requiere una unidad de pixeles como primer argumento (el segundo es opcional)';
+	}
+}
+
+/*
+ Transforma un valor en pixeles a rem.
+ @param   {number} $el: el valor en pixeles que se desea convertir.
+ @return  {number} el tamaño transformado en rem.
+*/
+@function rem($el) {
+	@if type_of($el) == number and unit($el) == 'px' {
+		@return ($el / 16px) * 1rem;
+	} @else {
+		@error 'La funcion rem() requiere una unidad de pixeles como argumento';
+	}
+}

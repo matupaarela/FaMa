@@ -1,0 +1,17 @@
+.header {
+    @include center;
+    justify-content: space-between;
+    padding: 0 1em;
+    box-shadow: $shadow2dp;
+    overflow: hidden;
+    min-width: 100vw;
+    max-width: 100vw;
+    height: 50px;
+    z-index: 100;
+    //position: fixed;
+    background: steelblue;
+    .logo {
+        color: #FFF;
+        font-weight: bold;
+    }
+}

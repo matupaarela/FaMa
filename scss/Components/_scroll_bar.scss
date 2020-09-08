@@ -1,0 +1,28 @@
+/*
+ @group   scroll_bar
+ @author  TUPA ARELA, Marco Antonio (matupaarela@hotmail.com)
+*/
+
+$sb_sz: 5px;
+$sb_radius: 10px;
+$main: #F2F2F2;
+::-webkit-scrollbar {
+	width: $sb_sz;
+	height: $sb_sz;
+	border-radius: 2px;
+}
+/* Carril del Scroll */
+::-webkit-scrollbar-track {
+	//box-shadow: inset 0 0 6px rgba($main, .5);
+	background: rgba($main, .2);
+	border-radius: $sb_radius;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: $sb_radius;
+	background: $main;
+	&:window-inactive {
+		background: rgba($main, .3);
+	}
+}

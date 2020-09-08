@@ -1,0 +1,39 @@
+/*
+ @group   pagination
+ @author  TUPA ARELA, Marco Antonio (matupaarela@hotmail.com)
+*/
+$pgBG: $md_green;
+$bdrsPG: .3em;
+.pagination {
+	padding: .5em;
+	@include center;
+	&__link {
+		background-color: rgba($pgBG, .5);
+		border-left: 1px solid rgba($white, .4);
+		padding: .3em .5em;
+		border-radius: 50%;
+		color: rgba($white, .8);
+		&:hover {
+			background: rgba($pgBG, .9);
+			cursor: pointer;
+		}
+		&--active,
+		&--disabled {
+			@extend .pagination__link;
+		}
+		&--active {
+			background: $md_green;
+			&:hover {
+				background: $md_green;
+				cursor: text;
+			}
+		}
+		&--disabled {
+			background: rgba($pgBG, .5);
+			&:hover {
+				background: rgba($pgBG, .5);
+				cursor: text;
+			}
+		}
+	}
+}

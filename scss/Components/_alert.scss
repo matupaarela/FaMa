@@ -1,0 +1,54 @@
+/*
+	@group   alert
+	@author  TUPA ARELA, Marco Antonio (matupaarela@hotmail.com)
+*/
+
+.alert {
+	@include fixedSize(auto, 350px);
+	@include center;
+	position: relative; /*Change to position: fixed;*/
+	bottom: 5px;
+	right: 5px;
+	justify-content: space-between;
+	z-index: 300;
+	padding: .5em 1em;
+	border-radius: .5em;
+	box-shadow: $shadow2dp;
+	$alert: &;
+	&--success,
+	&--warning,
+	&--danger {
+		@extend #{$alert};
+	}
+	&--success {
+		background-color: rgba($md_green, .9);
+	}
+	&--danger {
+		background-color: rgba($md_red, .9);
+	}
+	&--warning {
+		background-color: rgba($md_orange, .9);
+	}
+	&__content {
+		@include center;
+		color: #FFF;
+	}
+	&__icon {
+		width: 28px;
+	}
+	&__message {
+		font-size: 14px;
+		margin: 0 .5em;
+	}
+	&__button {
+		border: none;
+		outline: none;
+		background-color: transparent;
+		color: $white;
+		opacity: .6;
+		&:hover {
+			cursor: pointer;
+			opacity: 1;
+		}
+	}
+}

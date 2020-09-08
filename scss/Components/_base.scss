@@ -1,0 +1,39 @@
+/*
+ @group   base
+ @author  TUPA ARELA, Marco Antonio (matupaarela@hotmail.com)
+*/
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+a {
+	text-decoration: none;
+	color: $md_blue_grey;
+	//&:hover {  text-decoration : underline }
+}
+
+ul { list-style: none; }
+
+p, a, span {
+	font-size: 14px;
+}
+
+h1 { font-size: rem(20px); }
+h2 { font-size: rem(18px); }
+h3 { font-size: rem(16px); }
+h4 { font-size: rem(14px); }
+h5 { font-size: rem(12px); }
+h6 { font-size: rem(10px); }

@@ -1,0 +1,29 @@
+.detail {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    background-color: white;
+    padding: .5rem;
+    box-shadow: $shadow2dp;
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+    &__learn {
+        grid-column: 1 / 2;
+    }
+    &__requisite {
+        grid-column: 2 / 3;
+    }
+    &__level {
+        grid-column: 3 / 4;
+    }
+    .sp-title {
+        border-bottom: 1px solid rgba(#000, .2);
+        margin-bottom: .5rem;
+    }
+    .sp-desc {
+        margin-left: 1.25rem;
+        list-style-type: circle;
+    }
+}
