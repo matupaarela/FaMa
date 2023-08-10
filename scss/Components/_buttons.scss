@@ -14,7 +14,7 @@
 /*
 	Establece estilos predefinidos
 */
-@mixin btn($bg-color: var(--lightgray), $front-color: #333, $style: radius) {
+@mixin btn($bg-color: #AAA, $front-color: #333, $style: radius) {
 	@extend    %button;
 	background : $bg-color;
 	color      : $front-color;
@@ -138,5 +138,21 @@
 	}
 	&:hover {
 		box-shadow: $shadow12dp;
+	}
+}
+
+.btn--modern {
+	display: inline-block;
+	padding: .8em 1.6em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	@include gradient($gradient-three, to right);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: background 0.28s ease;
+	&:hover {
+		@include gradient($gradient-three, to left);
 	}
 }

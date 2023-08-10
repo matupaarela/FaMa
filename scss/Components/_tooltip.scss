@@ -33,15 +33,14 @@
 	visibility: hidden;
 	background-color: rgba(#000, 0.99);
 	color: #fff;
-	text-align: left;
 	border-radius: 3px;
 	width: 250px;
 	height: auto;
 	padding: 7px 10px;
 	z-index: 1;
 	opacity: 0;
-	box-shadow: 0 2px 5px 0 rgba($solid-black, 0.16), 0 2px 10px 0 rgba($solid-black, 0.12);
-	@include transition (.2s ease-in);
+	box-shadow: 0 2px 5px 0 rgba($black, 0.16), 0 2px 10px 0 rgba($black, 0.12);
+	//@include transition (.2s ease-in);
 }
 
 .tooltip-right {

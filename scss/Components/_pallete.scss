@@ -1,0 +1,16 @@
+@mixin gradient($colors, $orientation: to right) {
+	background: linear-gradient($orientation, $colors);
+}
+
+$gradient-one: #73d1d3, #badcc3, #dba380;
+$gradient-two: #dd528d, #ff8c79, #fbae52;
+$gradient-three: #1e7883, #a9bdbb, #ee7265;
+$gradient-four: #3d156b, #df3562, #feb97e;
+$gradient-five: #560ea2, #c78dc7, #f496a6;
+$gradient-six: #383f75, #ff723a, #ee2e21;
+
+$gradient-seven: #113035, #a7cb8e, #f3a332;
+$gradient-eight: #f0bf54, #ec5544, #9120a6;
+$gradient-nine: #fd475e, #c4659f, #7d8afa;
+
+// https://static.vecteezy.com/system/resources/previews/000/621/261/large_2x/vector-gradient-colors-ideas.jpg

@@ -1,7 +1,7 @@
 .banner {
 	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 	position: relative;
-	background: $color2;
+	background: $ed-blue;
 	&__img {
 		width: 100%;
 		opacity: .5;
@@ -33,7 +33,7 @@
 				text-align: center;
 				width: 100%;
 				font-size: 14px;
-				color: $text1;
+				color: $black;
 				margin-bottom: 1em;
 			}
 			&__title {

@@ -23,8 +23,7 @@
 @function text3d($number, $color: $black) {
 	$text-shadow: 1px 1px #{$color};
 	@for $i from 1 through $number {
-		$text-shadow: '#{$text-shadow},
-		#{$i}px #{$i}px #{$color}';
+		$text-shadow: '#{$text-shadow}, #{$i}px #{$i}px #{$color}';
 	}
 	@return unquote($text-shadow);
 }
@@ -35,7 +34,7 @@
  @param   {number} $context: el valor en pixeles del contenedor.
  @return  {number} el tamaño transformado en em.
 */
-@function em($el,$context:16px) {
+@function em($el, $context:16px) {
 	@if type_of($el) == number and unit($el) == 'px' {
 		@return ($el / $context) * 1em;
 	} @else {
