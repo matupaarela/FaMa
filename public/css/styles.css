@@ -206,25 +206,23 @@ h6 {
  @group   scroll_bar
  @author  TUPA ARELA, Marco Antonio (matupaarela@hotmail.com)
 */
+/* Estilo del scrollbar */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-  border-radius: 2px;
+  width: 12px;
 }
 
-/* Carril del Scroll */
 ::-webkit-scrollbar-track {
-  background: rgba(242, 242, 242, 0.2);
-  border-radius: 10px;
+  background-color: #f4f4f4;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: #F2F2F2;
+  background-color: #888;
+  border-radius: 6px;
+  border: 3px solid #f4f4f4;
 }
-::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(242, 242, 242, 0.3);
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 
 /*
@@ -322,7 +320,6 @@ h6 {
 */
 .btn, .btn--sm, .btn--ism, .btn--success, .btn--primary, .btn--info, .btn--warning, .btn--danger {
   display: inline-block;
-  padding: 0.8em 1.6em;
   cursor: pointer;
   border: none;
   outline: none;
@@ -337,67 +334,79 @@ h6 {
 }
 
 .btn, .btn--sm, .btn--ism, .btn--success, .btn--primary, .btn--info, .btn--warning, .btn--danger {
-  background: #AAA;
+  padding: 0.8em 1.6em;
+  background: linear-gradient(to bottom, #AAA, #777777);
   color: #333;
-  border-radius: 0.25em;
+  border-radius: 0.35em;
 }
 .btn:hover, .btn--sm:hover, .btn--ism:hover, .btn--success:hover, .btn--primary:hover, .btn--info:hover, .btn--warning:hover, .btn--danger:hover {
-  background: #9d9d9d;
+  background: linear-gradient(to bottom, #919191, #5e5e5e);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .btn:active, .btn--sm:active, .btn--ism:active, .btn--success:active, .btn--primary:active, .btn--info:active, .btn--warning:active, .btn--danger:active {
   transform: scale(0.97);
 }
 .btn--success {
-  background: #009688;
+  padding: 0.8em 1.6em;
+  background: linear-gradient(to bottom, #009688, #00302c);
   color: #FFF;
-  border-radius: 0.25em;
+  border-radius: 0.35em;
 }
 .btn--success:hover {
-  background: #007d71;
+  background: linear-gradient(to bottom, #00635a, black);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .btn--success:active {
   transform: scale(0.97);
 }
 .btn--primary {
-  background: #2196F3;
+  padding: 0.8em 1.6em;
+  background: linear-gradient(to bottom, #2196F3, #0960a5);
   color: #FFF;
-  border-radius: 0.25em;
+  border-radius: 0.35em;
 }
 .btn--primary:hover {
-  background: #0d8aee;
+  background: linear-gradient(to bottom, #0c7cd5, #064475);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .btn--primary:active {
   transform: scale(0.97);
 }
 .btn--info {
-  background: #5AC8FA;
+  padding: 0.8em 1.6em;
+  background: linear-gradient(to bottom, #5AC8FA, #07a1e7);
   color: #FFF;
-  border-radius: 0.25em;
+  border-radius: 0.35em;
 }
 .btn--info:hover {
-  background: #41c0f9;
+  background: linear-gradient(to bottom, #29b8f9, #067fb6);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .btn--info:active {
   transform: scale(0.97);
 }
 .btn--warning {
-  background: #FF9500;
+  padding: 0.8em 1.6em;
+  background: linear-gradient(to bottom, #FF9500, #995900);
   color: #FFF;
-  border-radius: 0.25em;
+  border-radius: 0.35em;
 }
 .btn--warning:hover {
-  background: #e68600;
+  background: linear-gradient(to bottom, #cc7700, #663c00);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .btn--warning:active {
   transform: scale(0.97);
 }
 .btn--danger {
-  background: #E91E63;
+  padding: 0.8em 1.6em;
+  background: linear-gradient(to bottom, #E91E63, #930e3b);
   color: #FFF;
-  border-radius: 0.25em;
+  border-radius: 1.6em;
 }
 .btn--danger:hover {
-  background: #d81558;
+  background: linear-gradient(to bottom, #c1134e, #640a29);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .btn--danger:active {
   transform: scale(0.97);
@@ -513,22 +522,6 @@ h6 {
 }
 .btn--floatting:hover {
   box-shadow: 0 12px 16px 1px rgba(0, 0, 0, 0.14), 0 4px 22px 3px rgba(0, 0, 0, 0.12), 0 6px 7px -4px rgba(0, 0, 0, 0.4);
-}
-
-.btn--modern {
-  display: inline-block;
-  padding: 0.8em 1.6em;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: linear-gradient(to right, #1e7883, #a9bdbb, #ee7265);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background 0.28s ease;
-}
-.btn--modern:hover {
-  background: linear-gradient(to left, #1e7883, #a9bdbb, #ee7265);
 }
 
 /*
@@ -1278,6 +1271,7 @@ h6 {
   overflow: hidden;
 }
 .card__info {
+  max-height: 260px;
   top: 180px;
   padding: 24px 16px;
   background: #FFF;
@@ -1296,6 +1290,8 @@ h6 {
 }
 .card__info__description {
   height: 124px;
+  overflow: hidden;
+  overflow-y: auto;
 }
 .card__info__description__temary {
   margin-top: 8px;
@@ -1316,7 +1312,6 @@ h6 {
 }
 .card__info__foot {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
-  padding-top: 16px;
 }
 
 /* Color Theme Swatches in Hex */

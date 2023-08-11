@@ -1,4 +1,4 @@
-@mixin gradient($colors, $orientation: to right) {
+@mixin gradient($colors, $orientation: to bottom) {
 	background: linear-gradient($orientation, $colors);
 }
 
@@ -12,5 +12,34 @@ $gradient-six: #383f75, #ff723a, #ee2e21;
 $gradient-seven: #113035, #a7cb8e, #f3a332;
 $gradient-eight: #f0bf54, #ec5544, #9120a6;
 $gradient-nine: #fd475e, #c4659f, #7d8afa;
+$gradient-ten: #40ffca, #9a76a4, #da0e7f;
+$gradient-eleven: #580c4a, #e68caf, #6a47c7;
+$gradient-twelve: #77E6E0, #a686f7, #f1796c; // primer color en observacion #77E6E0#383f75
+
+$gradient-thirteen: #4abdfb, #ad5adc, #f1b5e7;
+$gradient-fourteen: #2a4dc1, #5698e2, #935bca;
+$gradient-fifteen: #f47595, #b15a9a, #643ba2;
+$gradient-sixteen: #47c3fd, #40ffca, #950ece;
+$gradient-seventeen: #5ee0d3, #a586f7, #6a47c7;
+$gradient-eighteen: #fccd19, #eb7195, #8c1bab;
 
 // https://static.vecteezy.com/system/resources/previews/000/621/261/large_2x/vector-gradient-colors-ideas.jpg
+
+$color-primary-light: #A6D4FA;
+$color-primary-main: #90CAF9;
+$color-primary-dark: #648DAE;
+$color-secondary-light: #F6A5C0;
+$color-secondary-main: #F48FB1;
+$color-secondary-dark: #AA647B;
+$color-danger-light: #E57373;
+$color-danger-main: #F44336;
+$color-danger-dark: #D32F2F;
+$color-warning-light: #FFB74D;
+$color-warning-main: #FF9800;
+$color-warning-dark: #F57C00;
+$color-info-light: #64B5F6;
+$color-info-main: #2196F3;
+$color-info-dark: #1976D2;
+$color-success-light: #80C783;
+$color-success-main: #4BAE50;
+$color-success-dark: #388E3B;

@@ -5,7 +5,6 @@
 
 %button {
 	display: inline-block;
-	padding: .8em 1.6em;
 	cursor: pointer;
 	border: none;
 	outline: none;
@@ -16,14 +15,23 @@
 */
 @mixin btn($bg-color: #AAA, $front-color: #333, $style: radius) {
 	@extend    %button;
-	background : $bg-color;
-	color      : $front-color;
+	$padding-tb: .8em;
+	$padding-lr: 1.6em;
+	$orientation: to bottom;
+	padding: $padding-tb $padding-lr;
+	//background : $bg-color;
+	background: linear-gradient($orientation, $bg-color, darken($bg-color, 20));
+	color: $front-color;
 
-	&:hover { background: darken($bg-color, 5); }
+	//&:hover { background: darken($bg-colors, 5); }
+	&:hover {
+		background: linear-gradient($orientation, darken($bg-color, 10), darken($bg-color, 30));
+		box-shadow: $shadow2dp;
+	}
 	&:active { transform : scale(.97); }
 	
-	@if $style == radius { border-radius : .25em; }
-	@else if $style == round { border-radius : 1.25em; }
+	@if $style == radius { border-radius : .35em; }
+	@else if $style == round { border-radius : calc($padding-tb * 2); }
 }
 
 .btn-container {
@@ -44,7 +52,7 @@
 	&--primary { @include btn($md_blue, $white); }
 	&--info { @include btn($ios_tealblue, $white); }
 	&--warning { @include btn($ios_orange, $white); }
-	&--danger { @include btn($md_pink, $white); }
+	&--danger { @include btn($md_pink, $white, round); }
 
 	&--sm {
 		@extend .btn;
@@ -138,21 +146,5 @@
 	}
 	&:hover {
 		box-shadow: $shadow12dp;
-	}
-}
-
-.btn--modern {
-	display: inline-block;
-	padding: .8em 1.6em;
-	text-align: center;
-	text-transform: uppercase;
-	color: #ffffff;
-	@include gradient($gradient-three, to right);
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	transition: background 0.28s ease;
-	&:hover {
-		@include gradient($gradient-three, to left);
 	}
 }
